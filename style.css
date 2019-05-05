@@ -4,21 +4,24 @@
     padding: 0;
 }
 
+
 header 
 {
-    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(background4.png);
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    width: 100vw;
+    height: 300px;
+    margin-top: 0px;
+    padding-top: 0px;
+    --background-image: linear-gradient(rgba(63, 93, 105, 0.315), rgba(63, 93, 105, 0.315)), url(background4.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url(background4.png);
 }
 
 .main-nav 
 {
     float: right;
     list-style: none;
-    margin-top: 30px;
+    margin-top: 35px;
     height: 0px;
+    padding-top: 200px;
 }
 
 .main-nav li 
@@ -32,7 +35,7 @@ header
     text-decoration: none;
     padding: 5px 20px;
     font-family: "Roboto", sans-serif;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .main-nav li a:hover 
@@ -60,7 +63,14 @@ header
 
 body 
 {
-    font-family: monospace;
+    --font-family: monospace;
+    --font-family: "Avenir", sans-serif;
+    font-family: "Inconsolata";
+    --background-image: linear-gradient(rgb(12, 7, 11), rgb(8, 7, 12));
+    background-color: whitesmoke;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .row
@@ -69,43 +79,17 @@ body
     margin: auto;
 }
 
-.site-title
-{
-    position: absolute;
-    width: 1200px;
-    margin-left: 0px;
-    margin-top: 100px;
-    margin-right: 100px;
-}
-
-.page-content
-{
-    position: absolute;
-    width: 1500px;
-    margin-left: 0px;
-    margin-top: 335px;
-    margin-right: 0px;
-}
-
-.page-content p
-{
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    text-align: left;
-    margin-top: 20px;
-    margin-left: 450px;
-}
-
 h1, h1 a
 {
     color: white;
     font-family: "Karla", sans-serif;
+    text-align: left;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 50px;
-    margin-left: 225px;
-    margin-top: 175px;
+    font-size: 70px;
+    margin-top: 0px;
+    padding-bottom: 20px;
+    padding-top: 200px;
 }
 
 h1 a:hover
@@ -115,12 +99,39 @@ h1 a:hover
     transition: all 0.2s ease-in-out;
 }
 
+.page-title
+{
+    width: 1200px;
+    margin-top: 0px;
+    margin-left: 200px;
+    margin-right: 100px;
+}
+
+.page-content
+{
+    width: 100vw;
+    height: max-content;
+    margin-top: 50px;
+    margin-right: 0px;
+}
+
+.page-content p
+{
+    color: rgb(32, 32, 32);
+    text-decoration: none;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
 
 .content-list li
 {
-    color: white;
-    margin-left: 500px;
+    color: rgb(32, 32, 32);
+    margin-left: 60px;
     margin-top: 20px;
+    margin-right: 40px;
     font-size: 15px;
     list-style-type: square;
 }
@@ -128,10 +139,50 @@ h1 a:hover
 .content-list li a
 {
     color: #dc67ff;
-    margin-top: 5px;
 }
 
 .content-list li a:hover
 {
     color: #edb8fd;
+}
+
+.footer
+{
+    bottom: 0px;
+    padding-top: 100px;
+    left:300px;
+    font-size: 15px;
+}
+
+.footer li 
+{
+    color: rgb(68, 68, 68);
+    display: inline-block;
+    padding: 5px 20px;
+
+}
+
+.footer li a 
+{
+    color: #dc67ff;
+    text-decoration: none;
+    padding: 2px 20px;
+}
+
+.footer li a:hover
+{
+    color: #edb8fd;
+}
+
+.icon
+{
+    width: 10px;
+    height: 10px;
+}
+
+.wrapper
+{
+    max-width: 1000px;
+    padding-top: 20px;
+    margin: auto;
 }
